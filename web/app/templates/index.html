@@ -3,12 +3,108 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="jumbotron">
-        <h1>Challenge</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1>Challenge</h1>
+                    <p>Write some stuff here...</p>
+                    <a href="https://github.com/jdesilvio/challenge"
+                       target="_blank" class="btn btn-lg btn-success">
+                        View the code on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Question #1</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Do Stuff...</h4>
+
+                        <form method="POST" action="/" class="input-group">
+                            {{ form.name.label(class_="input-group-addon") }}
+                            {{ form.name(size=20, class_="form-control", placeholder="John Doe") }}
+                            <span class="input-group-btn">
+                                <input class="btn btn-primary" type="submit" value="Go">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Question #2</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Do Stuff...</h4>
+
+                        <form method="POST" action="/" class="input-group">
+                            {{ form.name.label(class_="input-group-addon") }}
+                            {{ form.name(size=20, class_="form-control", placeholder="John Doe") }}
+                            <span class="input-group-btn">
+                                <input class="btn btn-primary" type="submit" value="Go">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Question #3</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Do Stuff...</h4>
+
+                        <form method="POST" action="/" class="input-group">
+                            {{ form.name.label(class_="input-group-addon") }}
+                            {{ form.name(size=20, class_="form-control", placeholder="John Doe") }}
+                            <span class="input-group-btn">
+                                <input class="btn btn-primary" type="submit" value="Go">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Question #4</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Do Stuff...</h4>
+
+                        <form method="POST" action="/" class="input-group">
+                            {{ form.name.label(class_="input-group-addon") }}
+                            {{ form.name(size=20, class_="form-control", placeholder="John Doe") }}
+                            <span class="input-group-btn">
+                                <input class="btn btn-primary" type="submit" value="Go">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Question #5</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Do Stuff...</h4>
+
+                        <form method="POST" action="/" class="input-group">
+                            {{ form.name.label(class_="input-group-addon") }}
+                            {{ form.name(size=20, class_="form-control", placeholder="John Doe") }}
+                            <span class="input-group-btn">
+                                <input class="btn btn-primary" type="submit" value="Go">
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <form method="POST" action="/">
-        {{ form.name.label }}
-        {{ form.name(size=20) }}
-        <input type="submit" value="Go">
-   </form>
 {% endblock %}
